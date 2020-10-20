@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="thechuckv2.Pages.RandomJokePage"
+             xmlns:ViewModels="clr-namespace:thechuckv2.ViewModels"
+             xmlns:v="http://xamarin.com/schemas/2014/forms"
+             xmlns:Dto="clr-namespace:thechuckv2.Dto">
+
+    <v:ContentPage.BindingContext>
+        <ViewModels:RandomJokePageViewModel/>
+    </v:ContentPage.BindingContext>
+
+    <!--<RefreshView IsRefreshing="{Binding IsBusy}" Command="{Binding LoadRandomJokeCommand}" 
+                 BackgroundColor="White" RefreshColor="{DynamicResource Primary}" >-->
+        <StackLayout>
+        <!--<ContentView IsVisible="{Binding IsBusy}">
+                <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource Primary}"/>
+            </ContentView>-->
+
+        <Button Text="Generate Random Joke"
+                Command="{Binding LoadRandomJokeCommand}"
+                BackgroundColor="Black"/>
+        <Label Text="{Binding RandomJoke.value}" TextColor="Red"/>
+        <Label Text="???????" TextColor="Red"/>
+
+    </StackLayout>
+    <!--</RefreshView>-->
+</ContentPage>
