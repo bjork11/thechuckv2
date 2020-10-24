@@ -4,25 +4,26 @@
              x:Class="thechuckv2.Pages.RandomJokePage"
              xmlns:ViewModels="clr-namespace:thechuckv2.ViewModels"
              xmlns:v="http://xamarin.com/schemas/2014/forms"
-             xmlns:Dto="clr-namespace:thechuckv2.Dto">
+             xmlns:Dto="clr-namespace:thechuckv2.Dto"
+             BackgroundColor="{StaticResource Primary}"
+             Title="{Binding Title}">
 
-    <v:ContentPage.BindingContext>
-        <ViewModels:RandomJokePageViewModel/>
-    </v:ContentPage.BindingContext>
+    <StackLayout>
+        <ContentView IsVisible="{Binding IsBusy}">
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" Color="{StaticResource Secondary}"/>
+        </ContentView>
 
-    <!--<RefreshView IsRefreshing="{Binding IsBusy}" Command="{Binding LoadRandomJokeCommand}" 
-                 BackgroundColor="White" RefreshColor="{DynamicResource Primary}" >-->
-        <StackLayout>
-        <!--<ContentView IsVisible="{Binding IsBusy}">
-                <ActivityIndicator IsRunning="{Binding IsBusy}" Color="{DynamicResource Primary}"/>
-            </ContentView>-->
-
+        <Grid Padding="35,10,35,10"
+              BackgroundColor="{StaticResource Primary}">
+            <Label Text="{Binding RandomJoke.value}"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   />
+        </Grid>
         <Button Text="Generate Random Joke"
                 Command="{Binding LoadRandomJokeCommand}"
-                BackgroundColor="Black"/>
-        <Label Text="{Binding RandomJoke.value}" TextColor="Red"/>
-        <Label Text="???????" TextColor="Red"/>
-
+                BackgroundColor="{StaticResource Primary}"
+                VerticalOptions="EndAndExpand"/>
     </StackLayout>
-    <!--</RefreshView>-->
 </ContentPage>

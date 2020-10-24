@@ -678,11 +678,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj",
+      "projectUniqueName": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj",
       "projectName": "thechuckv2",
-      "projectPath": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj",
+      "projectPath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj",
       "packagesPath": "C:\\Users\\adamb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2\\obj\\",
+      "outputPath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

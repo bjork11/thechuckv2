@@ -11,7 +11,6 @@ namespace thechuckv2.ViewModels
 {
     class RandomJokePageViewModel : BaseViewModel
     {
-        private bool _isBusy = false;
         private JokeDto _randomJoke;
         public ICommand LoadRandomJokeCommand { get; }
 
@@ -20,19 +19,6 @@ namespace thechuckv2.ViewModels
             LoadRandomJokeCommand = new Command(
                 async () => await GetRandomJokeAsync(),
                 () => !IsBusy);
-        }
-        public bool IsBusy
-        {
-            get => _isBusy;
-            set
-            {
-                if (_isBusy != value)
-                {
-                    _isBusy = value;
-                    OnPropertyChanged();
-                    ((Command)LoadRandomJokeCommand).ChangeCanExecute();
-                }
-            }
         }
 
         public JokeDto RandomJoke
@@ -52,7 +38,7 @@ namespace thechuckv2.ViewModels
             try
             {
                 IsBusy = true;
-                _randomJoke = await _apiService.GetRandomJoke();
+                RandomJoke = await _apiService.GetRandomJoke();
             }
             catch
             {

@@ -11,15 +11,21 @@ namespace thechuckv2.Services
 {
     public class ApiService : IApiService
     {
-        public Task GetAllCategoriesAsync()
+        public async Task<string[]> GetAllCategories()
         {
-            throw new NotImplementedException();  
+            var data = await GetData("https://api.chucknorris.io/jokes/categories");
+            return JsonConvert.DeserializeObject<string[]>(data);
         }
 
         public async Task<JokeDto> GetRandomJoke()
         {
             var data = await GetData("https://api.chucknorris.io/jokes/random");
+            return JsonConvert.DeserializeObject<JokeDto>(data);
+        }
 
+        public async Task<JokeDto> GetJokeByCategory(string category)
+        {
+            var data = await GetData($"https://api.chucknorris.io/jokes/random?category={category}");
             return JsonConvert.DeserializeObject<JokeDto>(data);
         }
 

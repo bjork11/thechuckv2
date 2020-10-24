@@ -1981,11 +1981,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2.Android\\thechuckv2.Android.csproj",
+      "projectUniqueName": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2.Android\\thechuckv2.Android.csproj",
       "projectName": "thechuckv2.Android",
-      "projectPath": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2.Android\\thechuckv2.Android.csproj",
+      "projectPath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2.Android\\thechuckv2.Android.csproj",
       "packagesPath": "C:\\Users\\adamb\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2.Android\\obj\\",
+      "outputPath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -2006,8 +2006,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj": {
-              "projectPath": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj"
+            "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj": {
+              "projectPath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj"
             }
           }
         }

@@ -18,10 +18,21 @@ namespace thechuckv2.Pages
             InitializeComponent();
             BindingContext = viewModel = new StartPageViewModel();
         }
-        //protected override async void OnAppearing()
-        //{
-        //    base.OnAppearing();
-        //    await viewModel.GetAllCategoriesAsync();
-        //}
+
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            if (viewModel.Categories.Count == 0)
+            {
+                await viewModel.GetAllCategoriesAsync();
+            }
+        }
+
+        private async void CategoryItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            //var category = e.Item as string;
+            //await viewModel.GoToCategory(category);
+            throw new NotImplementedException();
+        }
     }
 }

@@ -4,9 +4,10 @@
              x:Class="thechuckv2.App">
     <Application.Resources>
         <ResourceDictionary>
-            <Color x:Key="Primary">Green</Color>
+            <Color x:Key="Primary">#333333</Color>
+            <Color x:Key="Secondary">DarkOrange</Color>
             <Style TargetType="Button">
-                <Setter Property="TextColor" Value="White"></Setter>
+                <Setter Property="TextColor" Value="{StaticResource Secondary}"></Setter>
                 <Setter Property="VisualStateManager.VisualStateGroups">
                     <VisualStateGroupList>
                         <VisualStateGroup x:Name="CommonStates">

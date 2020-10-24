@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "5TnwJDvXsX0Pff/1j6/yHtSB3l90NBlDi18XqbPBNUWHK3TVg1oE/pMBiiRxWvnFegY5GV6RNTsdsD3803nHSg==",
+  "dgSpecHash": "HiC32UbNUizSrMI9Jj8MbzKR7NXtqp5w+v+mg9wkAVFHNLI7T2gkx8rbjaRWz/9XOPkKnrDx0lcfJG+DJZG5KQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adamb\\OneDrive\\Skrivbord\\thechuckv2\\thechuckv2\\thechuckv2.Android\\thechuckv2.Android.csproj",
+  "projectFilePath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2.Android\\thechuckv2.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adamb\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",

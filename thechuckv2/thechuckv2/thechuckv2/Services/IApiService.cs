@@ -8,8 +8,9 @@ namespace thechuckv2.Services
 {
     public interface IApiService
     {
-        Task GetAllCategoriesAsync();
+        Task<string[]> GetAllCategories();
         Task<JokeDto> GetRandomJoke();
+        Task<JokeDto> GetJokeByCategory(string category);
         Task GetSearchResultAsync();
     }
 }

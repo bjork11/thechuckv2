@@ -17,7 +17,10 @@ namespace thechuckv2.Pages
         protected override async void OnAppearing()
         {
             base.OnAppearing();
-            await viewModel.GetRandomJokeAsync();
+            if (viewModel.RandomJoke == null)
+            {
+                await viewModel.GetRandomJokeAsync();
+            }
         }
     }
 }

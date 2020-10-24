@@ -4,33 +4,35 @@
              x:Class="thechuckv2.Pages.StartPage"
              xmlns:local="clr-namespace:thechuckv2.Resources"
              xmlns:ViewModels="clr-namespace:thechuckv2.ViewModels"
-             xmlns:c="http://xamarin.com/schemas/2014/forms">
+             xmlns:c="http://xamarin.com/schemas/2014/forms"
+             BackgroundColor="{StaticResource Primary}">
 
-    <c:ContentPage.BindingContext>
-        <ViewModels:StartPageViewModel/>
-    </c:ContentPage.BindingContext>
-    
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to CHUCK NORRIS fanclub!"
-                TextColor="{StaticResource Primary}" 
-                HorizontalOptions="Center"
-                FontSize="Title"
-                FontAttributes="Bold"
-            />
-            <Image Scale="0.5"
-                Source="{local:ImageResource thechuckv2.Resources.Images.chuck.jpeg}"
-            />
-            <!--<RefreshView Command="{Binding GetCategoriesCommand}" 
-                 BackgroundColor="{StaticResource PrimaryColor}">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label" x:Key="ListLabel">
+                <Setter Property="VerticalTextAlignment" Value="Center"/>
+                <Setter Property="FontAttributes" Value="Bold" />
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+                <Setter Property="TextColor" Value="White"/>
+                <Setter Property="FontSize" Value="Large" />
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
 
-                <CollectionView ItemsSource="{Binding }">
-                <CollectionView.ItemsLayout>
-                    <LinearItemsLayout Orientation="Vertical" ItemSpacing="2"/>
-                </CollectionView.ItemsLayout>
-                </CollectionView>
-            </RefreshView>-->
-
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}" Color="{StaticResource Secondary}"/>
+        <ListView x:Name="CategoryList" 
+                  SelectionMode="Single"
+                  ItemTapped="CategoryItemTapped"
+                  ItemsSource="{Binding Categories}"
+                  >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Label Style="{StaticResource ListLabel}" Text="{Binding .}"></Label>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
 </ContentPage>
