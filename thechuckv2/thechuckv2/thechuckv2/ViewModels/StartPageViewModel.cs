@@ -15,11 +15,16 @@ namespace thechuckv2.ViewModels
     {
         public ObservableCollection<string> Categories { get; private set; } = new ObservableCollection<string>();
         public ICommand GetCategoriesCommand { get; }
+        public ICommand GoToJokeByCategoryCommand { get; }
         public StartPageViewModel()
         {
             GetCategoriesCommand = new Command(
                 async () => await GetAllCategoriesAsync(),
                 () => !IsBusy);
+
+            //GoToJokeByCategoryCommand = new Command<string>(
+            //    async (category) => await _navigationService.GoToJokeByCategoryPage(category),
+            //    (category) => !IsBusy);
         }
 
         public async Task GetAllCategoriesAsync()
@@ -35,6 +40,11 @@ namespace thechuckv2.ViewModels
             }
 
             IsBusy = false;
+        }
+
+        public async Task GotToCategoryAsync(string category)
+        {
+            await _navigationService.GoToJokeByCategoryPage(category);
         }
     }
 }

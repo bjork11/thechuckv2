@@ -30,9 +30,8 @@ namespace thechuckv2.Pages
 
         private async void CategoryItemTapped(object sender, ItemTappedEventArgs e)
         {
-            //var category = e.Item as string;
-            //await viewModel.GoToCategory(category);
-            throw new NotImplementedException();
+            var category = e.Item as string;
+            await viewModel.GotToCategoryAsync(category);
         }
     }
 }

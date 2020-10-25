@@ -23,7 +23,10 @@ namespace thechuckv2.Pages
         {
             base.OnAppearing();
 
-            await viewModel.GetJokeByCategoryAsync();
+            if (viewModel.JokeByCategory == null)
+            {
+                await viewModel.GetJokeByCategoryAsync();
+            }
 
         }
     }

@@ -7,6 +7,7 @@ namespace thechuckv2.Services
 {
     public interface INavigationService
     {
-        Task GoBack();
+        //Task GoBack();
+        Task GoToJokeByCategoryPage(string category);
     }
 }
