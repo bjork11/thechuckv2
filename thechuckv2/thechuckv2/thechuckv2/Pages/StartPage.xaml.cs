@@ -17,6 +17,7 @@ namespace thechuckv2.Pages
         {
             InitializeComponent();
             BindingContext = viewModel = new StartPageViewModel();
+            viewModel.Title = "Categories";
         }
 
         protected override async void OnAppearing()

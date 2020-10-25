@@ -17,6 +17,7 @@ namespace thechuckv2.Pages
         { 
             InitializeComponent();
             BindingContext = viewModel = new JokeByCategoryPageViewModel(category);
+            viewModel.Title = category;
         }
 
         protected override async void OnAppearing()

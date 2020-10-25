@@ -12,6 +12,7 @@ namespace thechuckv2.Pages
         {
             InitializeComponent();
             BindingContext = viewModel = new RandomJokePageViewModel();
+            Title = "Chuck Norris FACTS";
         }
 
         protected override async void OnAppearing()
