@@ -16,6 +16,8 @@ namespace thechuckv2.ViewModels
 
         public RandomJokePageViewModel()
         {
+            Title = "Chuck Norris FACTS";
+
             LoadRandomJokeCommand = new Command(
                 async () => await GetRandomJokeAsync(),
                 () => !IsBusy);

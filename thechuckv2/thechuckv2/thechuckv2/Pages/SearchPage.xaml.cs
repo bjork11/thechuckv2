@@ -18,5 +18,15 @@ namespace thechuckv2.Pages
             InitializeComponent();
             BindingContext = viewModel = new SearchPageViewModel();
         }
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            SearchText.Focus();
+        }
+
+        private async void Search_Clicked(object sender, EventArgs e)
+        {
+            await viewModel.Search(viewModel.Query);
+        }
     }
 }

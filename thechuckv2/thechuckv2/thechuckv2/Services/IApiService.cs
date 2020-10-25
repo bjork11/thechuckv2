@@ -11,6 +11,6 @@ namespace thechuckv2.Services
         Task<string[]> GetAllCategories();
         Task<JokeDto> GetRandomJoke();
         Task<JokeDto> GetJokeByCategory(string category);
-        Task GetSearchResultAsync();
+        Task<SearchResult> GetSearchResult(string query);
     }
 }

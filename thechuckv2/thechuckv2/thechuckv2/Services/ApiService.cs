@@ -29,9 +29,10 @@ namespace thechuckv2.Services
             return JsonConvert.DeserializeObject<JokeDto>(data);
         }
 
-        public Task GetSearchResultAsync()
+        public async Task<SearchResult>GetSearchResult(string query)
         {
-            throw new NotImplementedException();
+            var data = await GetData($"https://api.chucknorris.io/jokes/search?query={query}");
+            return JsonConvert.DeserializeObject<SearchResult>(data);
         }
 
         private async Task<string> GetData(string url)

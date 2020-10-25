@@ -18,6 +18,8 @@ namespace thechuckv2.ViewModels
         public ICommand GoToJokeByCategoryCommand { get; }
         public StartPageViewModel()
         {
+            Title = "Categories";
+
             GetCategoriesCommand = new Command(
                 async () => await GetAllCategoriesAsync(),
                 () => !IsBusy);

@@ -14,6 +14,7 @@ namespace thechuckv2.ViewModels
         public JokeByCategoryPageViewModel(string category)
         {
             this.category = category;
+            Title = category;
 
             LoadJokeByCategoryCommand = new Command(
                 async () => await GetJokeByCategoryAsync(),
