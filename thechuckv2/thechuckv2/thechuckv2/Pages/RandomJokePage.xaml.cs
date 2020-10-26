@@ -1,4 +1,6 @@
-﻿using thechuckv2.ViewModels;
+﻿using System;
+using thechuckv2.Dto;
+using thechuckv2.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -22,5 +24,10 @@ namespace thechuckv2.Pages
                 await viewModel.GetRandomJokeAsync();
             }
         }
+
+        //private void Label_Double_Tapped(object sender, EventArgs e, JokeDto joke)
+        //{
+        //    viewModel.AddToFavorites(joke);
+        //}
     }
 }

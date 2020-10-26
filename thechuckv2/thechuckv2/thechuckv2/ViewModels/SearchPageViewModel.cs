@@ -15,17 +15,7 @@ namespace thechuckv2.ViewModels
         //public ICommand UserSearchCommand;
         public SearchPageViewModel()
         {
-            Title = "Search Facts";
-
-            //UserSearchCommand = new Command(
-            //    async () => await Search(_query),
-            //    () => !IsBusy);
-
-            //UserSearchCommand = new Command(
-            //    async () => await OnSearchClicked(_query),
-            //    () => !IsBusy);
-
-            //UserSearchCommand = new Command(OnSearchClicked(_query));   
+            Title = "Search Facts"; 
         }
 
         string _query = string.Empty;
@@ -38,25 +28,6 @@ namespace thechuckv2.ViewModels
                     OnPropertyChanged(nameof(Query));
                 }
         }
-
-        //private async Task OnSearchClicked(string query)
-        //{
-        //    IsBusy = true;
-
-        //    var jokes = await _apiService.GetSearchResult(query);
-
-        //    Jokes.Clear();
-
-        //    if (jokes != null)
-        //    {
-        //        foreach (var joke in jokes.result)
-        //        {
-        //            Jokes.Add(joke);
-        //        }
-        //    }
-
-        //    IsBusy = false;
-        //}
 
         public async Task Search(string query)
         {

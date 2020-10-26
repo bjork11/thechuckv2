@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qwJ3Z0PPRb3Pi7Ss7ytj9UiDKKmIP0DQcltBmMRgoG81z8Vi4HiOSXcaR1pAQHm75sqmNGQ9zZqJazT/adympQ==",
+  "dgSpecHash": "E21YOz5gppMBbinF8oQ16Y1qcpFC1TH2litPUbfKX9+WF9EhylYYc/PUiD4SL2EPqhL6oTl372iW2du5S6PYgg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2.iOS\\thechuckv2.iOS.csproj",
+  "projectFilePath": "C:\\Systemutveckling\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.iOS\\thechuckv2.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adamb\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",

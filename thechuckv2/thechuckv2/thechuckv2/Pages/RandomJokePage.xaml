@@ -18,8 +18,12 @@
             <Label Text="{Binding RandomJoke.value}"
                    TextColor="White"
                    FontAttributes="Bold"
-                   FontSize="Large"
-                   />
+                   FontSize="Large">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer NumberOfTapsRequired="2" Command="{Binding AddFavoriteCommand}" CommandParameter="{Binding .}" />
+                </Label.GestureRecognizers>
+            </Label>
+                   
         </Grid>
         <Button Text="Generate Random Joke"
                 Command="{Binding LoadRandomJokeCommand}"

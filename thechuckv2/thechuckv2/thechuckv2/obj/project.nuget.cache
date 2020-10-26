@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tLe9G7XBtcse41i44l1GiI8LajRNVuMF9xKa98pmMB2rCYlNNN7MPyaf9UVaOOlFuLjkqzSpRM8LL2HYc2gG/A==",
+  "dgSpecHash": "VLWvEgLwEIkgiPkJ3V64Wp21Q053sZW/jEUrOSpCA3Zi4/8xuoYtXuI2l+4yHZ1fFhr98LSm3ZD7eEktmwRDaQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adamb\\TheChuckV2-GIT\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj",
+  "projectFilePath": "C:\\Systemutveckling\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2\\thechuckv2.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
